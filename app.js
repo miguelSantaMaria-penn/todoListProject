@@ -191,6 +191,13 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+//setting up dynamic port for heroku
+//if not run on heroku but local will default to port 3000
+let port = process.env.PORT;
+if(port == null || port == ""){
+  port = 3000;
+}
+
+app.listen(port, function() {
+  console.log("Server has started.");
 });
