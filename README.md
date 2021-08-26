@@ -1,0 +1,3 @@
+This is a todo list web app I created while doing the App Brewery's Full Stack Web Development Course. It connects and works with a MongoDB Atlas cloud database to store user created todo lists and todo list items. Users can create a new list by adding a name after the home url route.
+
+I've made my own changes after what was required by the course. One notable challenge was figuring out how to get the environment variables set up both locally and on Heroku so that I could safely push to GitHub. I also made small stylistic changes to the code documentation and css. I will continue to improve this! 
